@@ -1,0 +1,11 @@
+cc_binary {
+    name: "hcdpack",
+    proprietary: true,
+    srcs: [
+        "hcdpack.c",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
