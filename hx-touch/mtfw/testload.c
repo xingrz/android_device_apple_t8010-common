@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Copyright (C) 2020 Corellium LLC
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

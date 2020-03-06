@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Copyright (C) 2020 Corellium LLC
+ */
+
 #ifndef _MTFW_H
 #define _MTFW_H
 

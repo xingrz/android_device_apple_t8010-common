@@ -29,6 +29,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
+#include <dirent.h>
 
 #include <sys/ioctl.h>
 #include <sys/types.h>
@@ -46,8 +47,7 @@ static pthread_once_t g_init = PTHREAD_ONCE_INIT;
 static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 static int g_last_backlight_mode = BRIGHTNESS_MODE_USER;
 
-char const*const LCD_FILE
-        = "/sys/class/backlight/0-0062/brightness";
+static char brightness_path[256] = "/sys/class/backlight/0-0062/brightness";
 
 /**
  * device methods
@@ -55,8 +55,24 @@ char const*const LCD_FILE
 
 void init_globals(void)
 {
+    DIR *dir;
+    struct dirent *de;
+
     // init the mutex
     pthread_mutex_init(&g_lock, NULL);
+
+    dir = opendir("/sys/class/backlight");
+    if(dir) {
+        while((de = readdir(dir))) {
+            if(de->d_name[0] != '.') {
+                sprintf(brightness_path, "/sys/class/backlight/%s/brightness", de->d_name);
+                break;
+            }
+        }
+        closedir(dir);
+    }
+
+    ALOGW("Backlight path: %s\n", brightness_path);
 }
 
 static int
@@ -142,7 +158,7 @@ set_light_backlight(struct light_device_t* dev,
 
     if (!err && !lpEnabled) {
         brightness = brightness_equation(brightness);
-        err = write_int(LCD_FILE, brightness);
+        err = write_int(brightness_path, brightness);
     }
 
     pthread_mutex_unlock(&g_lock);

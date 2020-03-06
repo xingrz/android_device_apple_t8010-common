@@ -148,5 +148,6 @@ on sys-boot-completed-set && property:persist.sys.zram_enabled=1
 on early-boot
     # Permission for LED driver
     chown system system /sys/class/backlight/0-0062/brightness
+    chown system system /sys/class/backlight/0-0063/brightness
 
 import /vendor/etc/init/hw/init.apple.usb.rc

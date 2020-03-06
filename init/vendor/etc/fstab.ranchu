@@ -7,4 +7,3 @@ vendor   /vendor     ext4    ro,barrier=1     wait,logical,first_stage_mount
 data     /data       tmpfs   noatime,nosuid,nodev   wait,check
 cache    /cache      tmpfs   noatime,nosuid,nodev   wait,check
 metadata /metadata   tmpfs   noatime,nosuid,nodev   wait,check
-/dev/block/by-name/sdcard    auto   auto      defaults    voldmanaged=sdcard:auto

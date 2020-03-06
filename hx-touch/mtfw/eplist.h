@@ -1,12 +1,6 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *
- * This file contains confidential information of Corellium LLC.
- * Unauthorized reproduction or distribution of this file is subject
- * to civil and criminal penalties.
- *
- * Copyright (C) 2017-20 Corellium LLC
- * All rights reserved.
- *
+ * Copyright (C) 2020 Corellium LLC
  */
 
 #ifndef _EPLIST_H
