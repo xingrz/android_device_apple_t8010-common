@@ -1,0 +1,8 @@
+service hx-touchd /vendor/bin/hw/hx-touchd /vendor/etc/hw/hx-touch.fwlist /dev/block/nvme0n3
+    socket hx-touchd-ctrl stream 0666 0 0 u:object_r:graphics_device:s0
+    class hal
+    user root
+    group root
+
+on boot
+    start hx-touchd

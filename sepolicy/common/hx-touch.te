@@ -1,0 +1,10 @@
+type hx_touch, domain;
+type hx_touch_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hx_touch)
+allow hx_touch hx_touch_device:chr_file rw_file_perms;
+allow hx_touch console_device:chr_file rw_file_perms;
+allow hx_touch syscfg_block_device:blk_file rw_file_perms;
+
+type hx_touch_device, dev_type;
+type syscfg_block_device, dev_type;

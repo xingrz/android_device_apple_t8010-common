@@ -1,0 +1,12 @@
+cc_binary {
+    name: "syscfg",
+    proprietary: true,
+    srcs: [
+        "main.c",
+        "syscfg.c",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}

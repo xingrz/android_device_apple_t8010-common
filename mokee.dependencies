@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_apple_t8010",
+    "target_path": "kernel/apple/t8010"
+  }
+]

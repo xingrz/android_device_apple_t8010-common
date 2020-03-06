@@ -1,0 +1,31 @@
+cc_binary {
+    name: "hx-touchd",
+    init_rc: ["hx-touchd.rc"],
+    proprietary: true,
+    relative_install_path: "hw",
+    srcs: [
+        "hx-touchd.c",
+        "mxml-3.1/mxml-attr.c",
+        "mxml-3.1/mxml-entity.c",
+        "mxml-3.1/mxml-file.c",
+        "mxml-3.1/mxml-get.c",
+        "mxml-3.1/mxml-index.c",
+        "mxml-3.1/mxml-node.c",
+        "mxml-3.1/mxml-private.c",
+        "mxml-3.1/mxml-search.c",
+        "mxml-3.1/mxml-set.c",
+        "mxml-3.1/mxml-string.c",
+        "mtfw/eplist.c",
+        "mtfw/mtfw.c",
+        "mtfw/qdict.c",
+        "mtfw/syscfg.c",
+    ],
+    local_include_dirs: [
+        "mxml-3.1",
+        "mtfw",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
