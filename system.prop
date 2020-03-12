@@ -2,3 +2,4 @@ ro.hardware.power=ranchu
 ro.radio.noril=true
 persist.sys.zram_enabled=1
 debug.stagefright.ccodec=0
+qemu.hw.mainkeys=0
