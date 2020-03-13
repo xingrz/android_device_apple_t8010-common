@@ -79,6 +79,7 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/common
 
 # Treble
 BOARD_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE_OVERRIDE := false
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
