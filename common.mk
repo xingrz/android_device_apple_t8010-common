@@ -60,15 +60,13 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    hwcomposer.ranchu \
     libEGL_swiftshader \
     libGLESv1_CM_swiftshader \
     libGLESv1_enc \
     libGLESv2_enc \
     libGLESv2_swiftshader \
     libvulkan_enc \
-    memtrack.ranchu \
-    vulkan.ranchu
+    memtrack.ranchu
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -138,8 +136,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service.apple \
-    power.ranchu
+    android.hardware.power@1.1-service.apple
 
 # Sensors
 PRODUCT_PACKAGES += \
