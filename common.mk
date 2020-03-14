@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service.goldfish
+    android.hardware.health@2.0-service.apple
 
 # Init
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_WHITELIST += \

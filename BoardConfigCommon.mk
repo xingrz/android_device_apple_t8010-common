@@ -77,6 +77,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SELinux
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/common
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+
 # Treble
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := false
