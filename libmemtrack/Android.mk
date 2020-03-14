@@ -25,6 +25,6 @@ LOCAL_CFLAGS := -Wconversion -Wall -Werror -Wno-sign-conversion
 LOCAL_CLANG  := true
 LOCAL_SHARED_LIBRARIES := liblog libhardware
 LOCAL_SRC_FILES := memtrack_dummy.c
-LOCAL_MODULE := memtrack.ranchu
+LOCAL_MODULE := memtrack.apple
 #LOCAL_MODULE := memtrack.$(TARGET_BOARD_PLATFORM)
 include $(BUILD_SHARED_LIBRARY)

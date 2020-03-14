@@ -25,6 +25,6 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../include
 LOCAL_SRC_FILES := sensors_qemu.c
-LOCAL_MODULE := sensors.ranchu
+LOCAL_MODULE := sensors.apple
 
 include $(BUILD_SHARED_LIBRARY)

@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_enc \
     libGLESv2_swiftshader \
     libvulkan_enc \
-    memtrack.ranchu
+    memtrack.apple
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -79,13 +79,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service \
-    gatekeeper.ranchu
+    gatekeeper.apple
 
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service \
-    gps.ranchu
+    gps.apple
 
 # Health
 PRODUCT_PACKAGES += \
@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    lights.ranchu
+    lights.apple
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -142,7 +142,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
-    sensors.ranchu
+    sensors.apple
 
 # USB
 PRODUCT_PACKAGES += \

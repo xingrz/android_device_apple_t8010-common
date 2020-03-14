@@ -46,6 +46,6 @@ LOCAL_CFLAGS += -DQEMU_HARDWARE
 LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../include
 LOCAL_SRC_FILES := gps_qemu.c
-LOCAL_MODULE := gps.ranchu
+LOCAL_MODULE := gps.apple
 
 include $(BUILD_SHARED_LIBRARY)

@@ -24,6 +24,6 @@ LOCAL_C_INC := lights_hw.c
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../include
 LOCAL_SRC_FILES := lights_hw.c
-LOCAL_MODULE := lights.ranchu
+LOCAL_MODULE := lights.apple
 LOCAL_CFLAGS += -DLIGHT_BACKLIGHT
 include $(BUILD_SHARED_LIBRARY)
